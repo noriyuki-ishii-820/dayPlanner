@@ -4,8 +4,8 @@ var todayText = document.getElementById("currentDay");
 var today = moment().format("MMMM Do YYYY");
 todayText.textContent = today;
 
-//var currentHour = parseInt(moment().format('H')); //gets the current hour value in 24hr format
-var currentHour = 13;
+var currentHour = parseInt(moment().format('H')); //gets the current hour value in 24hr format
+// currentHour = 13; //for testing purpose
 console.log(currentHour); // outputs the current hour value in 24hr format
 
 $(document).ready(function() {
@@ -31,7 +31,7 @@ $(document).ready(function() {
 
     $('.textarea').each(function() {
         var blockHourId = parseInt($(this).attr("id"));
-        console.log(currentHour, blockHourId);
+        console.log(currentHour, blockHourId); //compare and contrast current vs. present values
 
         if (blockHourId < currentHour) {
             $(this).addClass("past");
