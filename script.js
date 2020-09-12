@@ -1,41 +1,32 @@
-//showing the current day/month
+//showing today
 
-var currentTimeText = document.getElementById("currentDay");
-var currentTime = moment().format("MMMM Do YYYY");
-currentTimeText.textContent = currentTime;
+var todayText = document.getElementById("currentDay");
+var today = moment().format("MMMM Do YYYY");
+todayText.textContent = today;
 
-var currentHour = moment().format('L');   
+var currentHour = moment().format('H'); //gets the current hour value in 24h format
+console.log(currentHour);
 
-// userInput
-var userInput = document.getElementsByClassName("textBox");
 
-// time variables
-
-var hourArray = ["9am","10am","11am","12pm","1pm","2pm","3pm","4pm","5pm"];
 
 $(document).ready(function() {
+    // hit the save button to store the notes in the local storage
+     $(".saveBtn").on("click", function(){
+        var userInput = $(this).siblings(".textarea").children(".textBox").val();
+        var hour = $(this).parent().attr("id");
+        localStorage.setItem(hour, userInput);
+     });
 
- 
-    for (var i = 0; i < hourArray.length; i++) {
-
-        $(".container").append(
-            '<div class="row"><div class="col-2 hour">' + hourArray[i] + '</div><div class="col-8 textarea"><input type="text" class="textBox"></input></div><div class="col-2 saveBtn"><i class="saveBtnIcon fas fa-save fa-vc"></i></div></div>'
-          );
-
-     }
-     
-     function saveData(){
-        localStorage.setItem("duty", JSON.stringify(userInput));
-        alert("data saved!");
-        console.log("clicked!!");
-    }
-
-
-    $(".fa-save").click(saveData)
-
-
-
-
+     //load any data in the local storage
+     $("#9AM .textarea .textBox").val(localStorage.getItem("9AM"));
+     $("#10AM .textarea .textBox").val(localStorage.getItem("10AM"));
+     $("#11AM .textarea .textBox").val(localStorage.getItem("11AM"));
+     $("#12PM .textarea .textBox").val(localStorage.getItem("12PM"));
+     $("#13PM .textarea .textBox").val(localStorage.getItem("13PM"));
+     $("#14PM .textarea .textBox").val(localStorage.getItem("14PM"));
+     $("#15PM .textarea .textBox").val(localStorage.getItem("15PM"));
+     $("#16PM .textarea .textBox").val(localStorage.getItem("16PM"));
+     $("#17PM .textarea .textBox").val(localStorage.getItem("17PM"));
 
 });
 

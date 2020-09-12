@@ -8,8 +8,16 @@ p {
   margin:0;
 }
 
-textarea{
-  background: transparent;
+#currentDay {
+  margin-top:50px;
+}
+
+.container{
+  margin-bottom:50px;
+}
+
+.textarea {
+  background:lightgrey;
   border: none;
   resize: none;
   color: #000000;
@@ -21,6 +29,7 @@ textarea{
   height:95%;
   width:100%;
   border:none;
+  background:lightgrey;
 }
 
 .jumbotron {
@@ -88,5 +97,8 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
+#lastHourBox {
+  border-bottom:1px dashed #000000;
+}
 
 
