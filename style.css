@@ -8,8 +8,12 @@ p {
   margin:0;
 }
 
-#currentDay {
+#currentDay, #currentHrMin {
   margin-top:50px;
+}
+
+#currentHrMin {
+  font-size:50px;
 }
 
 .container{
@@ -95,4 +99,8 @@ p {
   border-bottom:1px dashed #000000;
 }
 
+.clearBtnSection {
+  margin-top:20px;
+  text-align:center;
+}
 

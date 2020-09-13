@@ -47,11 +47,17 @@ $(document).ready(function() {
             $(this).removeClass("past");
 
     };
-    
-    
-    
+    });
 
-})
+    $('.clearBtn').on("click", function(){
+
+            if (confirm("This will delete your schedule. Would you confirm?")){
+                localStorage.clear();
+                location.reload();
+            } else {
+                return false;
+            }
+    });
 
 });
 
