@@ -8,7 +8,7 @@ This app will run in the browser and feature dynamically updated HTML and CSS po
 # Tech Used
 
 - HTML
-- CSS
+- CSSgit sta
 - JavaScript
 - Moment.js 
 - jQuery
