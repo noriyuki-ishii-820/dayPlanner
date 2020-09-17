@@ -1,14 +1,22 @@
 # usyd-bootcamp-Week5-Noriyuki-Ishii
 
+## Work Day Scheduler
 
+This is a simple calendar application that allows the user to save events for each hour of the day. 
+This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-## from the Assignment README
+# Tech Used
 
-# 05 Third-Party APIs: Work Day Scheduler
+- HTML
+- CSS
+- JavaScript
+- Moment.js 
+- jQuery
+- Bootstrap
 
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+## Deployment
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+https://noriyuki-ishii-820.github.io/usyd-bootcamp-Week5-Noriyuki-Ishii/
 
 ## User Story
 
@@ -36,25 +44,8 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
-
 ## Notes
 
 - time is from 9am to 5pm
 - past or present or future has different colors
 
-
-
-The following animation demonstrates the application functionality:
-
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
