@@ -19,7 +19,7 @@ https://noriyuki-ishii-820.github.io/dayPlanner/
 
 ## Screenshot
 
-Screenshot 1) UI provides today's date and the text inputs between 8am and 5pm.
+Screenshot 1) UI provides today's date and the text inputs between 8am and 5pm. Past hours are colored grey, current in red and future in green.
 ![](planner1.png)
 
 Screenshot 2) User can write his/her plans in each hour. Texts are saved in the local storage. The red button on the bottom would erase all inputs. 
